@@ -8,12 +8,26 @@ function App() {
   let [pstatus, setPStatus] = useState(false)
 
   let [menuStatus, setMenuStatus] = useState(false)
+
+  let [modalStatus, setModalStatus] = useState(false)
   return (
     <div className="App">
-      <button className='micon' onClick={() => setMenuStatus(!menuStatus)}>
-        {menuStatus ? <span>&times;</span> : <span>&#9776;</span>}
+      <div>
+        <button className='en' onClick={() => setModalStatus(true)}>Enquire Now</button>
+      </div>
 
-      </button>
+      <br />
+      <div onClick={() => setModalStatus(false)} className={`modalOverlay ${modalStatus ? 'modalShow' : ''}`} />
+      <div className={`modalDiv ${modalStatus ? 'showModalDiv' : ''}`}>
+        <h1>Enquire Now <span onClick={() => setModalStatus(false)}>&times;</span></h1>
+      </div>
+      <br />
+      <div>
+        <button className='micon' onClick={() => setMenuStatus(!menuStatus)}>
+          {menuStatus ? <span>&times;</span> : <span>&#9776;</span>}
+
+        </button></div>
+
       <div className={`menu ${menuStatus ? 'activeMenu' : ''}`}>
         <ul>
           <li>Home</li>
