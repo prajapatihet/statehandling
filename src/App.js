@@ -5,7 +5,7 @@ function App() {
   let [status, setStatus] = useState(false)
   return (
     <div className="App">
-      <button onClick={() => setStatus(!status)}>Show</button>
+      <button onClick={() => setStatus(!status)}>{(status ? 'Hide' : 'Show')}</button>
       {status ? <p className='para'>Welcome to Page</p> : ''}
 
     </div>
