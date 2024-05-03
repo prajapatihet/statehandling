@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.para {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  width: 1000px;
+  margin: auto;
 }
