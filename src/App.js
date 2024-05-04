@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import btnModule from './Button.module.css'
+import btnModule from './Button.module.css';
+import { questions } from './Data/faqs';
 
 function App() {
   let [status, setStatus] = useState(false)
@@ -10,8 +11,25 @@ function App() {
   let [menuStatus, setMenuStatus] = useState(false)
 
   let [modalStatus, setModalStatus] = useState(false)
+
+  let [showAns, setShowAns] = useState(questions[0].id)
   return (
     <div className="App">
+      <div>
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        <div className='faqouter'>
+
+          {questions.map((faqItems, i) => {
+            return (
+              <div className='faqitems'>
+                <h2 onClick={() => setShowAns(faqItems.id)}>{faqItems.question}</h2>
+                <p className={showAns === faqItems.id ? 'activeAns' : ''}>{faqItems.answer}</p>
+              </div>
+            )
+          })}
+
+        </div>
+      </div>
       <div>
         <button className='en' onClick={() => setModalStatus(true)}>Enquire Now</button>
       </div>

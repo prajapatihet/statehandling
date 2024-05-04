@@ -67,3 +67,37 @@
   top: 150px;
   transform: rotate(90deg);
 }
+
+.faqouter {
+  width: 1320px;
+  margin: auto;
+}
+
+.faqitems {
+  border: 1px solid red;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.faqitems h2 {
+  margin: 0px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.faqitems p {
+  margin: 0px;
+  padding: 0px;
+  height: 0px;
+  transform: scaleY(0);
+  text-align: left;
+}
+
+.activeAns {
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+}
