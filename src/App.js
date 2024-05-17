@@ -1,21 +1,21 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
-import btnModule from './Button.module.css';
-import { questions } from './Data/faqs';
+// import btnModule from './Button.module.css';
+// import { questions } from './Data/faqs';
 
 function App() {
-  let [status, setStatus] = useState(false)
+  // let [status, setStatus] = useState(false)
 
-  let [pstatus, setPStatus] = useState(false)
+  // let [pstatus, setPStatus] = useState(false)
 
-  let [menuStatus, setMenuStatus] = useState(false)
+  // let [menuStatus, setMenuStatus] = useState(false)
 
-  let [modalStatus, setModalStatus] = useState(false)
+  // let [modalStatus, setModalStatus] = useState(false)
 
-  let [showAns, setShowAns] = useState(questions[0].id)
+  // let [showAns, setShowAns] = useState(questions[0].id)
   return (
     <div className="App">
-      <div>
+      {/* <div>
         <h1>Frequently Asked Questions (FAQs)</h1>
         <div className='faqouter'>
 
@@ -65,7 +65,7 @@ function App() {
         <button className={btnModule.warning}>Warning</button>
         <button onClick={() => setStatus(!status)}>{(status ? 'Hide' : 'Show')}</button>
         {status ? <p className='para'>Welcome to Page</p> : ''}
-      </div>
+      </div> */}
 
 
     </div>
