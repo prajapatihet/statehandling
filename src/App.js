@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 import './App.css';
-import Faqs from './Faqs'
+// import Faqs from './Faqs'
 // import btnModule from './Button.module.css';
 // import { questions } from './Data/faqs';
 
@@ -14,13 +14,21 @@ function App() {
   // let [modalStatus, setModalStatus] = useState(false)
 
   // let [showAns, setShowAns] = useState(questions[0].id)
+
+  let n = ["ram", "rav", "raj", "hello"];
   return (
     <div className="App">
 
+      {n.map((item, i) => {
+        return (
+          <li key={i}>{item}</li>
+        )
+      })}
 
 
 
-      <Faqs />
+
+      {/* <Faqs /> */}
       {/* <div>
         <h1>Frequently Asked Questions (FAQs)</h1>
         <div className='faqouter'>
