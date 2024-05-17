@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 import './App.css';
+import Faqs from './Faqs'
 // import btnModule from './Button.module.css';
 // import { questions } from './Data/faqs';
 
@@ -15,6 +16,11 @@ function App() {
   // let [showAns, setShowAns] = useState(questions[0].id)
   return (
     <div className="App">
+
+
+
+
+      <Faqs />
       {/* <div>
         <h1>Frequently Asked Questions (FAQs)</h1>
         <div className='faqouter'>
@@ -66,8 +72,6 @@ function App() {
         <button onClick={() => setStatus(!status)}>{(status ? 'Hide' : 'Show')}</button>
         {status ? <p className='para'>Welcome to Page</p> : ''}
       </div> */}
-
-
     </div>
   );
 }
